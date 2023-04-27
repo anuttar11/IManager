@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+.detailpage-heading{
+    text-align: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.detailpage-heading:hover{
+    text-decoration: underline;
+}
+
+.wrapper{
+    /* background-color: red; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 70vh;
+ 
+
+   
+}
+.container{
+    /* border: 1px solid red; */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    background-color:#E9ECEB;
+    width: 70%;
+   
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 10px 45px -23px rgba(0,0,0,0.43);
+-moz-box-shadow: 10px 10px 45px -23px rgba(0,0,0,0.43);
+box-shadow: 10px 10px 45px -23px rgba(0,0,0,0.43);
+  
+    /* height: 70vh; */
+    
+    
+}
+
+
+.expand-collapse{
+    margin: 0 5px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 70%;
+    margin: 10px 8px;
+    /* border: 1px solid yellowgreen; */
+}
+
+.detailpage-label{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.detailpage-input{
+    width: 14rem;
+    height: 2rem;
+    padding: 6px 12px;
+    border: 0px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid gainsboro;
+    color: #002C3F;
+    /* border-radius: 8px; */
+ 
+
+}
+
+.detailpage-input:focus,.detailpage-select:focus{
+    outline: none !important;
+    border-bottom: 2px solid #FFB81C;
+    /* box-shadow: 0 0 10px #a5f3fc; */
+}
+
+.detailpage-select{
+    width: 15.5rem;
+    height: 3rem;
+    margin-top: 3px;
+    padding: 6px 12px;
+    border: 0;
+    border-bottom: 2px solid gainsboro;
+  
+}
+
+.detailpage-options{
+    width: 15rem;
+    height: 2.5rem;
+font-size: 13px;
+padding: 4px 8px;
+
+}
+
+::placeholder{
+    color: #032C3D;
+}
+
+.detailpage-submit{
+    padding: 10px;
+    /* border: 10px; */
+    border: 0;
+    
+    width: 100px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FFB81C;
+    color:#002C3F;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    
+}
+
+.detailpage-submit:hover{
+    transform: scale(1.03);
+}
+
+
+@media screen and (max-width: 729px) {
+
+/* .container{
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 100vw;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+} */
+  }

@@ -1,0 +1,65 @@
+.progressbar-wrapper{
+  
+    display: flex;
+ justify-content: center;
+    width: 100vw;
+    background-color: #E9ECEB;
+    padding: 5px 0;
+    
+   
+}
+
+.progressbar-container{
+  
+    width: 100%;
+    height: 60px;
+display: flex;
+justify-content: space-evenly;
+gap: 20px;
+}
+
+
+.progressbar-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  margin-left:0px ;
+  margin-right:0px ;
+  
+  
+}
+
+
+
+.circle{
+    /* position: absolute; */
+   display: inline-block;
+   border:1px solid grey;
+   border-radius: 50%;
+   height: 10px;
+   width: 10px;
+   
+   
+}
+
+.progressbar-option-heading{
+    position: relative;
+    font-size: 18px;
+    
+   top: 7px;
+    margin-bottom: 4px;
+    right: 40px;
+}
+
+.disabled{
+    cursor: not-allowed;
+}
+
+
+.disable-heading{
+    color: grey;
+}
+
+
