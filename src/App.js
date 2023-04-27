@@ -1,9 +1,5 @@
 import './App.css';
-import Detailpage from './components/DetailPage/Detailpage';
 import { Routes, Route } from "react-router-dom"
-import Navbar from './components/Navbar/Navbar';
-// import Login from './components/Login/Login';
-// import Login from './components/Login/Login';
 import Homepage from './Pages/Homepage';
 
 function App() {

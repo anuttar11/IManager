@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 75px;
+  background-color: #e9eceb;
+  padding: 10px 0;
+}

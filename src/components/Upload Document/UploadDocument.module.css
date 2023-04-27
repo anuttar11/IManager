@@ -1,0 +1,55 @@
+.wrapper {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.container {
+  /* border: 1px solid red; */
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 10px;
+  background-color: #e9eceb;
+  width: 70%;
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
+  box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
+  border: 1px solid black
+  /* height: 70vh; */
+}
+
+.uploaddocumentpageSubmit {
+  padding: 10px;
+  /* border: 10px; */
+  border: 0;
+
+  width: 100px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffb81c;
+  color: #002c3f;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.uploaddocumentpageSubmit:hover {
+  transform: scale(1.03);
+}
+
+.uploaddocumentInput{
+    display: none;
+}
+
+.uploaddocumentLabel{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
