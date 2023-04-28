@@ -228,7 +228,7 @@ export default function Progressbar() {
             ))}
           </StepContainer>
 
-          <ButtonsContainer>
+          {/* <ButtonsContainer>
             <ButtonStyle onClick={prevStep} disabled={activeStep === 1}>
               Previous
             </ButtonStyle>
@@ -239,7 +239,7 @@ export default function Progressbar() {
             >
               Next
             </ButtonStyle>
-          </ButtonsContainer>
+          </ButtonsContainer> */}
         </MainContainer>
       </div>
     </>

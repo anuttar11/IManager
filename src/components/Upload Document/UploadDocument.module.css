@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
+  border:1px solid black;
 }
 .container {
   /* border: 1px solid red; */
   padding: 20px 10px;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
   margin-top: 10px;
   background-color: #e9eceb;
   width: 70%;
@@ -18,11 +19,20 @@
   -webkit-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
   box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
-  border: 1px solid black
+  border: 1px solid black;
   /* height: 70vh; */
 }
 
-.uploaddocumentpageSubmit {
+.fileuploader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9eceb;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.submit {
   padding: 10px;
   /* border: 10px; */
   border: 0;
@@ -38,18 +48,16 @@
   margin: 10px 0;
 }
 
-.uploaddocumentpageSubmit:hover {
+.submit:hover {
   transform: scale(1.03);
 }
 
-.uploaddocumentInput{
-    display: none;
-}
 
-.uploaddocumentLabel{
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 5px;
+.uploaddocumentLabel {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 15px;
+  width: 50%;
+  border: 2px solid #b2b2b3;
 }

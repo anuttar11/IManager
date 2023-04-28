@@ -9,7 +9,7 @@ export default function Homepage() {
     <>
       <Navbar />
       <Progressbar />
-      <Detailpage />
+      {/* <Detailpage /> */}
       <UploadDocument />
       <div></div>
     </>
