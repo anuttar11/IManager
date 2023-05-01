@@ -1,6 +1,6 @@
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
-} */
+}
 .wrapper {
   /* background-color: red; */
   display: flex;
@@ -95,32 +95,42 @@
 .fileTable > tbody > tr > td {
   /* height: 40px;
   max-height: 40px; */
-  border: 1px solid #b2b2b3;
+  border: 1px solid #ffb81c;
   padding: 5px 0;
   text-align: center;
 }
 .fileTable > thead > tr > th {
   text-align: center;
-  border: 1px solid #b2b2b3;
+  border: 1px solid #ffb81c;
+  padding: 5px 0;
   /* border: 1px solid black; */
 }
+
 .fileTable > thead > tr > th.column1,
-.fileTable > tbody > tr > td.column1 {
-  width: 20%;
+.fileTable > tbody > tr > td.column1,
+.fileTable > thead > tr > th.column4,
+.fileTable > tbody > tr > td.column4 {
+  width: 10%;
 }
 .fileTable > thead > tr > th.column2,
 .fileTable > tbody > tr > td.column2 {
-  width: 60%;
+  width: 20%;
 }
 .fileTable > thead > tr > th.column3,
 .fileTable > tbody > tr > td.column3 {
-  width: 20%;
+  width: 60%;
+}
+/* .fileTable > thead > tr > th.column4, */
+.fileTable > tbody > tr > td.column4 {
+  width: 10%;
 }
 .fileTable {
-  border: 1px solid #b2b2b3;
+  border: 1px solid #ffb81c;
   width: 100%;
 }
 .fileSelect {
-  border: 5px solid black;
-  width: 100%;
+  /* border: 1px solid black; */
+  width: 80%;
+  background: transparent;
+  height: 30px;
 }

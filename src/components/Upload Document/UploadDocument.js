@@ -14,7 +14,7 @@ export default function UploadDocument() {
         ...oldarr,
         {
           docType: (
-            <select>
+            <select className={Uploaddocument.fileSelect}>
               <option value="doc1">val1</option>
               <option value="doc2">val2</option>
               <option value="doc3">val3</option>
@@ -37,7 +37,15 @@ export default function UploadDocument() {
               />
             </label>
           ),
-          delete: <MdDelete style={{ cursor: "pointer" }} size="24px" />,
+          delete: (
+            <div
+              onClick={() => {
+                console.log("deleting");
+              }}
+            >
+              <MdDelete style={{ cursor: "pointer" }} size="24px" />
+            </div>
+          ),
         },
       ];
     });
@@ -58,20 +66,22 @@ export default function UploadDocument() {
           >
             <thead>
               <tr>
-                <th className={Uploaddocument.column1}>Document Type</th>
-                <th className={Uploaddocument.column2}>Uploaded file</th>
-                <th className={Uploaddocument.column3}> Delete </th>
+                <th className={Uploaddocument.column1}>S. no.</th>
+                <th className={Uploaddocument.column2}>Document Type</th>
+                <th className={Uploaddocument.column3}>Uploaded file</th>
+                <th className={Uploaddocument.column4}> Delete </th>
               </tr>
             </thead>
             <tbody>
               {fileName.map((item, index) => {
                 return (
                   <tr>
-                    <td className={Uploaddocument.column1}>{item.docType}</td>
-                    <td className={Uploaddocument.column2}>
+                    <td className={Uploaddocument.column1}>{index+1}.</td>
+                    <td className={Uploaddocument.column2}>{item.docType}</td>
+                    <td className={Uploaddocument.column3}>
                       {item.uploadedFile}
                     </td>
-                    <td className={Uploaddocument.column3}>{item.delete}</td>
+                    <td className={Uploaddocument.column4}>{item.delete}</td>
                   </tr>
                 );
               })}
