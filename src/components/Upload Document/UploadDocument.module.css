@@ -1,11 +1,16 @@
+/* ::-webkit-scrollbar{
+  display: none;
+} */
 .wrapper {
   /* background-color: red; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   height: 70vh;
-  border:1px solid black;
+  /* border: 2px solid black; */
 }
+
 .container {
   /* border: 1px solid red; */
   padding: 20px 10px;
@@ -19,24 +24,21 @@
   -webkit-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
   box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.43);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* height: 70vh; */
 }
 
-.fileuploader{
+.fileuploader {
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
   background-color: #e9eceb;
   width: 100%;
-  border: 1px solid black;
 }
 
 .submit {
   padding: 10px;
-  /* border: 10px; */
   border: 0;
-
   width: 100px;
   outline: none;
   font-size: 16px;
@@ -52,12 +54,73 @@
   transform: scale(1.03);
 }
 
+.addFile {
+  padding: 10px;
+  border: 0;
+  width: 100px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffb81c;
+  color: #002c3f;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px 30px 10px 0;
+}
+
+.addFile:hover {
+  transform: scale(1.03);
+}
 
 .uploaddocumentLabel {
   display: flex;
   align-items: center;
   border-radius: 4px;
   padding: 15px;
-  width: 50%;
+  width: 70%;
   border: 2px solid #b2b2b3;
+  cursor: pointer;
+  margin: auto;
+}
+
+.filelist {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  overflow-y: auto;
+  border: 1px solid pink;
+}
+
+.fileTable > tbody > tr > td {
+  /* height: 40px;
+  max-height: 40px; */
+  border: 1px solid #b2b2b3;
+  padding: 5px 0;
+  text-align: center;
+}
+.fileTable > thead > tr > th {
+  text-align: center;
+  border: 1px solid #b2b2b3;
+  /* border: 1px solid black; */
+}
+.fileTable > thead > tr > th.column1,
+.fileTable > tbody > tr > td.column1 {
+  width: 20%;
+}
+.fileTable > thead > tr > th.column2,
+.fileTable > tbody > tr > td.column2 {
+  width: 60%;
+}
+.fileTable > thead > tr > th.column3,
+.fileTable > tbody > tr > td.column3 {
+  width: 20%;
+}
+.fileTable {
+  border: 1px solid #b2b2b3;
+  width: 100%;
+}
+.fileSelect {
+  border: 5px solid black;
+  width: 100%;
 }
